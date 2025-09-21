@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Logs
+*.log
+*.out
+*.err
+
+# Coverage / testing
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+*.pid
+*.seed
+*.bak
+docker-compose.override.yml
+# локальные тома/данные
+rabbitmq_data/
+cache/
+**/.cache/
+
+# Env files (секреты, пароли)
+.env
+.env.local
+.env.*.local
+
+# JSON с приватными данными (если не надо коммитить)
+mac-vendors.json
+definitions.json
+
+# System
+.DS_Store
+Thumbs.db

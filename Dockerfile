@@ -8,11 +8,6 @@ COPY definitions.json /etc/rabbitmq/definitions.json
 # Включаем необходимые плагины
 RUN rabbitmq-plugins enable --offline rabbitmq_management
 
-# Создаём пользователя и пароль через переменные окружения
-ENV RABBITMQ_DEFAULT_USER=celery
-ENV RABBITMQ_DEFAULT_PASS=celerypassword
-ENV RABBITMQ_DEFAULT_VHOST=/
-
 # Загружаем дефолтные определения
 ENV RABBITMQ_LOAD_DEFINITIONS=/etc/rabbitmq/definitions.json
 
