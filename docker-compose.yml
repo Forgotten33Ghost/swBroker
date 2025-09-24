@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: rabbitmq
     env_file:
-      - rabbit.env         # все секреты/переменные тут
+      - .env         # все секреты/переменные тут
     volumes:
       - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
       - ./definitions.json:/etc/rabbitmq/definitions.json:ro
